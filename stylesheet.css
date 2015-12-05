@@ -1,0 +1,157 @@
+/*CSS Stylesheet*/
+
+/** {border: 1px solid black;}*/
+
+html {
+  font-size: 1.4em;
+  height: 100%; background: linear-gradient(#FC6042, #FCB941);
+}
+
+body {
+  font-size: 1.4em;
+  height: 100%; 
+}
+
+
+
+h1, h2, h3 {text-shadow: 2px 2px 5px #800000;;}
+h1,
+h2 {
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+.top {
+
+  animation: bounce 0.2s ease 0.8s;
+    animation-delay: 1.37s;
+  animation-fill-mode: forwards;
+  color: white;
+}
+
+h1 span {
+  transform-origin: bottom center;
+  transform: scale(0);
+  backface-visibility: hidden;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+h1 span:nth-child(1) {
+  animation: scale 0.1s linear;
+  animation-fill-mode: forwards;
+}
+
+h1 span:nth-child(2) {
+  animation: scale 0.2s linear 0.3s;
+  animation-fill-mode: forwards;
+  font-size: 1.3em;
+}
+
+h1 span:nth-child(3) {
+
+  animation: scale 0.2s linear 0.4s;
+
+  animation-fill-mode: forwards;
+  font-size: 1.6em;
+}
+
+h2 {
+
+  animation: flyin 0.1s linear 0.8s;
+
+  animation-fill-mode: forwards;
+    animation-iteration-count: 
+
+  transform: translateY(1em);
+  opacity: 0;
+  color: #EE543A;
+  font-size: 2.55em;
+  margin-top: -.9em;
+    
+    
+}
+
+
+
+
+
+
+h1,
+h2, h3 {
+  font-family: 'Fjalla One', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+h3 {
+
+  animation: knock 0.1s linear 1.3s;
+
+  animation-fill-mode: forwards;
+
+  transform: translateY(-1em);
+  opacity: 0;
+  color: #f8d545;
+  font-size: 1.85em;
+  margin-top: -1.5em;
+}
+
+
+@keyframes scale {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2em);
+  }
+    75%{ transform: translatey(-4em);}
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes flyin {
+  0% {
+    transform: translateX(10em);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes knock {
+  0% {
+    transform: translateY(2em);
+  }
+  50% {
+    transform: translateY(-0.5em);
+    opacity: 1;
+  }
+    
+    100% {
+    transform: translateY(0em);
+    opacity: 1;
+  }
+}
+
+#pizza{margin-top: 0; animation: rollIn 0.8s linear ; animation-fill-mode: forwards;}
+
+@keyframes rollIn { 0% 
+    { transform: translateX(-1000px) rotate(0);}
+    100% {transform: translateX(500px) rotate(360deg);
+    
+    }
